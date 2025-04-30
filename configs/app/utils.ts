@@ -4,7 +4,7 @@ import * as regexp from 'toolkit/utils/regexp';
 export const replaceQuotes = (value: string | undefined) => value?.replaceAll('\'', '"');
 
 export const getEnvValue = (envName: string) => {
-  // eslint-disable-next-line no-restricted-properties
+
   const envs = (isBrowser() ? window.__envs : process.env) ?? {};
 
   if (isBrowser() && envs.NEXT_PUBLIC_APP_INSTANCE === 'pw') {

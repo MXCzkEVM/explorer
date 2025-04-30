@@ -30,6 +30,7 @@ const AddressCoinBalanceChart = ({ addressHash }: Props) => {
       date: new Date(date),
       value: BigNumber(value).div(10 ** config.chain.currency.decimals).toNumber(),
     }));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ data ]);
 
   return (
