@@ -3479,7 +3479,7 @@ function StatsMoreViem({ icon = true }: { icon?: boolean } = {}) {
     },
   });
   const l1latestSyncedHeader = useQuery({
-    queryKey: [ 'statsMore_l2latestSyncedHeader' ],
+    queryKey: [ 'statsMore_l1latestSyncedHeader' ],
     queryFn: async() => {
       // 获取 moonchain lastSyncedBlock
       const lastSyncedBlock = await contracts.l2.read.lastSyncedBlock();
