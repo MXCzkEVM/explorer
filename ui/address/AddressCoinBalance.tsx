@@ -15,6 +15,7 @@ import { generateListStub } from 'stubs/utils';
 import useQueryWithPages from 'ui/shared/pagination/useQueryWithPages';
 import SocketAlert from 'ui/shared/SocketAlert';
 
+import config from '../../configs/app';
 import AddressCoinBalanceChart from './coinBalance/AddressCoinBalanceChart';
 import AddressCoinBalanceHistory from './coinBalance/AddressCoinBalanceHistory';
 
