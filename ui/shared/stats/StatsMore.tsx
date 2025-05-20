@@ -217,7 +217,7 @@ function StatsMoreViem({ icon = true }: { icon?: boolean } = {}) {
         value={ (
           <Link
             onClick={ () => {
-              const explorer = chains.arbitrum.blockExplorers.default;
+              const explorer = chains.moonchain.blockExplorers.default;
               window.open(`${ explorer.url }/block/${ l2latestSyncedHeader.data }`, '_blank');
             } }
           >
