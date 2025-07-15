@@ -38,7 +38,7 @@ const queries = {
 
 const configs = {
   testnet: {
-    graph: 'https://geneva-graph-node.moonchain.com/subgraphs/name/mxczkevm/mxc-graph',
+    graph: 'https://geneva-graph-node.mxc.com/subgraphs/name/mxczkevm/mxc-graph',
     clients: {
       moonchain: createPublicClient({ chain: moonchainGeneva, transport: http() }),
       arbitrum: createPublicClient({ chain: arbitrumSepolia, transport: http() }),
@@ -49,7 +49,7 @@ const configs = {
     },
   },
   mainnet: {
-    graph: 'https://graph-node.moonchain.com/subgraphs/name/mxczkevm/mxc-graph',
+    graph: 'https://graph-node.mxc.com/subgraphs/name/mxczkevm/mxc-graph',
     clients: {
       moonchain: createPublicClient({ chain: moonchain, transport: http() }),
       arbitrum: createPublicClient({ chain: arbitrum, transport: http() }),
